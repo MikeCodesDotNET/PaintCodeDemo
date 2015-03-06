@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaintCodeDemo", "PaintCodeDemo\PaintCodeDemo.csproj", "{FA549B2B-1A70-4143-A4DB-CA722A890D82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA549B2B-1A70-4143-A4DB-CA722A890D82}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{FA549B2B-1A70-4143-A4DB-CA722A890D82}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{FA549B2B-1A70-4143-A4DB-CA722A890D82}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{FA549B2B-1A70-4143-A4DB-CA722A890D82}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{FA549B2B-1A70-4143-A4DB-CA722A890D82}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{FA549B2B-1A70-4143-A4DB-CA722A890D82}.Debug|iPhone.Build.0 = Debug|iPhone
+		{FA549B2B-1A70-4143-A4DB-CA722A890D82}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{FA549B2B-1A70-4143-A4DB-CA722A890D82}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{FA549B2B-1A70-4143-A4DB-CA722A890D82}.Release|iPhone.ActiveCfg = Release|iPhone
+		{FA549B2B-1A70-4143-A4DB-CA722A890D82}.Release|iPhone.Build.0 = Release|iPhone
+		{FA549B2B-1A70-4143-A4DB-CA722A890D82}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{FA549B2B-1A70-4143-A4DB-CA722A890D82}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+EndGlobal
