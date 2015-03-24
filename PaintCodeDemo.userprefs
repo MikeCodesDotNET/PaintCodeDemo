@@ -1,1 +1,17 @@
-﻿<Properties StartupItem="PaintCodeDemo/PaintCodeDemo.csproj" />
+﻿<Properties StartupItem="PaintCodeDemo/PaintCodeDemo.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6Plus.8.2" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../OneDrive/Documents/Development/Infragistics WPF/RichTextDocument/DataStructures/Utilities.cs">
+    <Files>
+      <File FileName="PaintCodeDemo/Views/Custom Controls/MyTimerView.cs" Line="1" Column="1" />
+      <File FileName="PaintCodeDemo/DemoStyleKit.cs" Line="1" Column="1" />
+      <File FileName="PaintCodeDemo/Controllers/PaintCodeDemoViewController.cs" Line="1" Column="1" />
+      <File FileName="../../OneDrive/Documents/Development/Infragistics WPF/RichTextDocument/DataStructures/Utilities.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="PaintCodeDemo/DemoStyleKit.cs" line="60" offsetX="567" offsetY="856" expression="percentage" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>

@@ -97,7 +97,7 @@
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
-    <InterfaceDefinition Include="Views\MainStoryboard_iPhone.storyboard" />
+    <InterfaceDefinition Include="Controllers\MainStoryboard_iPhone.storyboard" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />

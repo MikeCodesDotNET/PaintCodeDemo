@@ -53,39 +53,37 @@ namespace PaintCodeDemo
 
         //// Drawing Methods
 
-        public static void DrawTimer(CGRect frame, float angle)
-        {
-            //// General Declarations
-            var context = UIGraphics.GetCurrentContext();
+		public static void DrawTimer(CGRect frame, float percentage)
+		{
+			var context = UIGraphics.GetCurrentContext();
 
-            //// coverView Drawing
-            var coverViewPath = UIBezierPath.FromOval(new CGRect(frame.GetMinX() + 5.0f, frame.GetMinY() + 4.0f, 230.0f, 230.0f));
-            DemoStyleKit.Purple.SetFill();
-            coverViewPath.Fill();
+			var expression = 360.0f - percentage;
 
-
-            //// completedView Drawing
-            context.SaveState();
-            context.TranslateCTM(frame.GetMinX() + 120.0f, frame.GetMinY() + 119.0f);
-            context.RotateCTM(90.0f * NMath.PI / 180.0f);
-
-            var completedViewRect = new CGRect(-115.0f, -115.0f, 230.0f, 230.0f);
-            var completedViewPath = new UIBezierPath();
-            completedViewPath.AddArc(new CGPoint(completedViewRect.GetMidX(), completedViewRect.GetMidY()), completedViewRect.Width / 2.0f, (nfloat)(180.0f * NMath.PI/180), (nfloat)(-(angle + 167.0f) * NMath.PI/180.0f), true);
-            completedViewPath.AddLineTo(new CGPoint(completedViewRect.GetMidX(), completedViewRect.GetMidY()));
-            completedViewPath.ClosePath();
-
-            DemoStyleKit.Green.SetFill();
-            completedViewPath.Fill();
-
-            context.RestoreState();
+			var coverViewPath = UIBezierPath.FromOval(new CGRect(frame.GetMinX() + 5.0f, frame.GetMinY() + 4.0f, 230.0f, 230.0f));
+			DemoStyleKit.Purple.SetFill();
+			coverViewPath.Fill();
 
 
-            //// backgroundView Drawing
-            var backgroundViewPath = UIBezierPath.FromOval(new CGRect(frame.GetMinX() + 10.0f, frame.GetMinY() + 9.0f, 220.0f, 220.0f));
-            DemoStyleKit.Purple.SetFill();
-            backgroundViewPath.Fill();
-        }
+			context.SaveState();
+			context.TranslateCTM(frame.GetMinX() + 120.0f, frame.GetMinY() + 119.0f);
+			context.RotateCTM(-90.0f * NMath.PI / 180.0f);
+
+			var completedViewRect = new CGRect(-115.0f, -115.0f, 230.0f, 230.0f);
+			var completedViewPath = new UIBezierPath();
+			completedViewPath.AddArc(new CGPoint(completedViewRect.GetMidX(), completedViewRect.GetMidY()), completedViewRect.Width / 2.0f, (nfloat)(-360.0f * NMath.PI/180), (nfloat)(-expression * NMath.PI/180.0f), true);
+			completedViewPath.AddLineTo(new CGPoint(completedViewRect.GetMidX(), completedViewRect.GetMidY()));
+			completedViewPath.ClosePath();
+
+			DemoStyleKit.Green.SetFill();
+			completedViewPath.Fill();
+
+			context.RestoreState();
+
+			var backgroundViewPath = UIBezierPath.FromOval(new CGRect(frame.GetMinX() + 10.0f, frame.GetMinY() + 9.0f, 220.0f, 220.0f));
+			DemoStyleKit.Purple.SetFill();
+			backgroundViewPath.Fill();
+		}
+
 
     }
 }
