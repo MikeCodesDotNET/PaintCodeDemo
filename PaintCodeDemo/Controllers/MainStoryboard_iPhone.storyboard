@@ -17,22 +17,36 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedRGB" red="0.63529411764705879" green="0.22745098039215686" blue="0.65490196078431373" alpha="1"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="5" customClass="MyTimerView" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="38" y="135" width="243" height="240"/>
+                            <view contentMode="scaleToFill" id="5" customClass="MyTimerView" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="38" y="139" width="243" height="240"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="Angle">
-                                        <real key="value" value="497"/>
+                                        <real key="value" value="330"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="Percentage">
+                                        <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <color key="backgroundColor" colorSpace="calibratedRGB" red="0.63529411764705879" green="0.23137254901960785" blue="0.65490196078431373" alpha="1"/>
+                                <constraints>
+                                    <constraint id="74" firstAttribute="width" constant="243"/>
+                                    <constraint id="75" firstAttribute="height" constant="240"/>
+                                </constraints>
                             </view>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="472" minValue="0.0" maxValue="1000" id="6" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="38" y="458" width="262" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="360" id="6" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="38" y="434" width="262" height="55"/>
                                 <connections>
                                     <action selector="slider_ValueChanged:" destination="vXZ-lx-hvc" id="10" eventType="valueChanged"/>
                                 </connections>
                             </slider>
                         </subviews>
+                        <constraints>
+                            <constraint id="76" firstItem="5" firstAttribute="leading" secondItem="6" secondAttribute="leading" constant="0.0"/>
+                            <constraint id="77" firstItem="5" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="0.0"/>
+                            <constraint id="78" constant="139" firstItem="5" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top"/>
+                            <constraint firstItem="6" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="9" id="81"/>
+                            <constraint firstItem="6" firstAttribute="top" secondItem="5" secondAttribute="bottom" constant="55" id="84"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="slider" destination="6" id="name-outlet-6"/>
@@ -41,6 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
