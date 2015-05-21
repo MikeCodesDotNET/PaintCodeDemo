@@ -60,7 +60,7 @@ namespace PaintCodeDemo
 
         partial void slider_ValueChanged(UISlider sender)
         {
-            this.timerView.Percentage = sender.Value;
+            this.timerView.Value = sender.Value;
         }
     }
 }

@@ -20,25 +20,25 @@ namespace PaintCodeDemo
 
         void Initialize ()
         {
-            _percentage = 50;
+            _value = 50;
         }
 
         public override void Draw(CoreGraphics.CGRect rect)
         {
-			DemoStyleKit.DrawTimer(rect, Percentage);
+			DemoStyleKit.DrawTimer(rect, Value);
         }
 
-		float _percentage; 
-		[Export("Percentage"), Browsable(true)]
-		public float Percentage 
+        float _value; 
+		[Export("Value"), Browsable(true)]
+		public float Value 
 		{
 			get 
 			{
-				return _percentage;
+				return _value;
 			}
 			set
 			{
-				_percentage = value;
+				_value = value;
 				SetNeedsDisplay();
 			}
 		}
